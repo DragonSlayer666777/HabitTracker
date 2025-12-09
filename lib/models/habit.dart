@@ -1,4 +1,3 @@
-// lib/models/habit.dart
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 
@@ -15,18 +14,18 @@ class Habit extends HiveObject {
   @HiveField(2)
   String description;
 
-  // Simpan sebagai int (codePoint) + family biar aman
+  
   @HiveField(3)
   int iconCodePoint;
 
   @HiveField(4)
-  String iconFontFamily; // biasanya 'MaterialIcons'
+  String iconFontFamily; 
 
   @HiveField(5)
   DateTime? reminderTime;
 
   @HiveField(6)
-  Map<String, bool> completions; // '2025-12-08': true/false
+  Map<String, bool> completions; 
 
   Habit({
     required this.id,
@@ -38,6 +37,6 @@ class Habit extends HiveObject {
     Map<String, bool>? completions,
   }) : completions = completions ?? {};
 
-  // Helper biar gampang dipake di UI
+  
   IconData get icon => IconData(iconCodePoint, fontFamily: iconFontFamily);
 }

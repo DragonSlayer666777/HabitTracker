@@ -77,7 +77,7 @@ class _AddHabitScreenState extends State<AddHabitScreen> {
     if (time != null) {
       setState(() => _reminderTime = DateTime(0, 0, 0, time.hour, time.minute));
     } else {
-      setState(() => _setReminder = false); // Jika batal, matikan switch
+      setState(() => _setReminder = false); 
     }
   }
 

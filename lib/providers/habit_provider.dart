@@ -95,6 +95,6 @@ class HabitProvider extends ChangeNotifier {
     }
     return total;
   }
-  // Di dalam HabitProvider
+  
 
 }

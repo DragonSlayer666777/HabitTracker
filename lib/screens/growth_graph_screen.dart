@@ -88,7 +88,7 @@ class _GrowthGraphScreenState extends State<GrowthGraphScreen> {
     return SideTitles(
       showTitles: true,
       getTitlesWidget: (value, meta) {
-        const months = ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'];
+        const months = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'];
         return Text(months[value.toInt()]);
       },
     );

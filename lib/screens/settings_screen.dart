@@ -18,7 +18,7 @@ class SettingsScreen extends StatelessWidget {
               children: [const Text('Simple habit tracking app to stay consistent.')],
             ),
           ),
-          // Add more settings as needed, e.g., theme, export data
+          
         ],
       ),
     );

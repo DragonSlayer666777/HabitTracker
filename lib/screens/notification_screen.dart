@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/habit_provider.dart';
-import '../models/habit.dart';  // Fixed: Add this import!
+import '../models/habit.dart';  
 
 class NotificationScreen extends StatelessWidget {
   const NotificationScreen({super.key});

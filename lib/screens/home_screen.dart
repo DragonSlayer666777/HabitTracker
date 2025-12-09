@@ -22,7 +22,7 @@ class HomeScreen extends StatelessWidget {
       ),
       drawer: _buildDrawer(context),
 
-      // <<< INI YANG BARU: Floating Action Button di bawah >>>
+      
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.redAccent,
         elevation: 8,
@@ -36,7 +36,7 @@ class HomeScreen extends StatelessWidget {
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
 
-      // Body tetap sama, cuma dibungkus SafeArea + Padding biar tombol + tidak ketutup notch
+      
       body: provider.habits.isEmpty
           ? Center(
               child: Column(
@@ -65,7 +65,7 @@ class HomeScreen extends StatelessWidget {
               ),
             )
           : ListView.builder(
-              padding: const EdgeInsets.only(bottom: 90), // biar list tidak ketutup tombol +
+              padding: const EdgeInsets.only(bottom: 90), 
               itemCount: provider.habits.length,
               itemBuilder: (ctx, i) {
                 final habit = provider.habits[i];
@@ -96,7 +96,7 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  // Dialog X merah & check hijau besar (sesuai mockup)
+  
   void _showConfirmationDialog(BuildContext context, Habit habit) {
     showDialog(
       context: context,
